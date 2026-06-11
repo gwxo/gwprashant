@@ -2,17 +2,7 @@
     /**
      * 1. FIREBASE CONFIGURATION
      */
-    const firebaseConfig = {
-        apiKey: "AIzaSyCCJsyiOY8dmMpPioOHl40pRgsrSAIQCiE",
-        authDomain: "gwadmin07.firebaseapp.com",
-        projectId: "gwadmin07",
-        storageBucket: "gwadmin07.firebasestorage.app",
-        messagingSenderId: "678263026788",
-        appId: "1:678263026788:web:a433c076309a54d1ecdb71"
-    };
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
-
+    
     /**
      * 2. SPA VIEW TEMPLATES (Your Original UI)
      */
