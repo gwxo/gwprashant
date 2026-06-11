@@ -1,0 +1,28 @@
+
+  /* Hide Theme Elements */
+  #header, #footer, #socket, #sidebar, .breadcrumb, .entry-header, 
+  .social-share, .post-author, #comments, .related-posts, #back-to-top,
+  #pagination, .entry-tag, .blog-admin {
+    display: none !important;
+  }
+
+  /* Force Content to Full Width & Remove Spacing */
+  #primary, .container, #main-content, #main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    border: none !important;
+    flex: 0 0 100% !important;
+  }
+
+  /* Reset Body padding added by Sticky Header */
+  body {
+    padding-top: 0 !important;
+    background: #ffffff !important; /* Set your desired background color */
+  }
+
+  /* Custom Page Content Area */
+  #post-body {
+    margin: 0 !important;
+  }
