@@ -1,28 +1,32 @@
 
-  /* Hide Theme Elements */
-  #header, #footer, #socket, #sidebar, .breadcrumb, .entry-header, 
-  .social-share, .post-author, #comments, .related-posts, #back-to-top,
-  #pagination, .entry-tag, .blog-admin {
+  /* 1. Hide every single theme element */
+  #header, #footer, #socket, #sidebar, .breadcrumb, 
+  .entry-header, .post-author, #comments, #back-to-top,
+  .social-share, .entry-tag, #pagination {
     display: none !important;
   }
 
-  /* Force Content to Full Width & Remove Spacing */
-  #primary, .container, #main-content, #main {
-    padding: 0 !important;
+  /* 2. Break out of all theme containers */
+  body, #primary, .container, #main-content, #main, 
+  article, .entry-text, #post-body {
+    display: block !important;
     margin: 0 !important;
-    max-width: 100% !important;
-    width: 100% !important;
+    padding: 0 !important;
+    max-width: none !important;
+    width: 100vw !important;
+    min-height: 100vh !important;
     border: none !important;
-    flex: 0 0 100% !important;
+    background: none !important;
   }
 
-  /* Reset Body padding added by Sticky Header */
+  /* 3. Reset Body settings */
   body {
     padding-top: 0 !important;
-    background: #ffffff !important; /* Set your desired background color */
+    overflow-x: hidden;
   }
 
-  /* Custom Page Content Area */
-  #post-body {
-    margin: 0 !important;
+  /* 4. Ensure no Bootstrap constraints apply */
+  .col-lg-8 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
   }
